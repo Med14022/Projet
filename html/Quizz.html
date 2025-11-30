@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boudabous Mohamed</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#accueil">
+                <i class="fas fa-user-circle"></i> Boudabous Mohamed
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/ParcoursAcadémique.html"><i class="fas fa-graduation-cap"></i> Parcours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/Compétences.html"><i class="fas fa-code"></i> Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/Stages.html"><i class="fas fa-briefcase"></i> Expériences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/ManifestationsScientifiques.html"><i class="fas fa-calendar"></i> Événements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/Matières.html"><i class="fas fa-book"></i> Matières</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/Passions.html"><i class="fas fa-heart"></i> Passions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/Quizz.html"><i class="fas fa-question-circle"></i> Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/Contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/Témoignage.html"><i class="fas fa-comment"></i> Témoignage</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="quiz" class="bg-light">
+        <canvas id="networkCanvas"></canvas>
+        <div class="container" style="z-index: 2; position: relative;">
+            <h2 class="section-title">Quiz - Mon Projet Portfolio</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i> Testez vos connaissances sur le code de mon projet portfolio ! 10 questions vous attendent.
+                    </div>
+                    <form id="quizForm">
+                        <!-- Question 1 -->
+                        <div class="quiz-question">
+                            <h5>1. Que signifie HTML ?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="a"> Hyper Text Markup Language
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="b"> High Tech Modern Language
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="c"> Home Tool Markup Language
+                            </label>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="quiz-question">
+                            <h5>2. Quelle balise est utilisée pour créer un lien hypertexte ?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="a"> &lt;link&gt;
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="b"> &lt;a&gt;
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="c"> &lt;href&gt;
+                            </label>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="quiz-question">
+                            <h5>3. Quel langage est utilisé pour styliser les pages web ?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="a"> JavaScript
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="b"> CSS
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="c"> Python
+                            </label>
+                        </div>
+
+                        <!-- Question 4 -->
+                        <div class="quiz-question">
+                            <h5>4. Quelle propriété CSS change la couleur du texte ?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q4" value="a"> text-color
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q4" value="b"> font-color
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q4" value="c"> color
+                            </label>
+                        </div>
+
+                        <!-- Question 5 -->
+                        <div class="quiz-question">
+                            <h5>5. Comment déclarer une variable en JavaScript (moderne) ?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q5" value="a"> var x = 5;
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q5" value="b"> let x = 5;
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q5" value="c"> int x = 5;
+                            </label>
+                        </div>
+
+                        <!-- Question 6 -->
+                        <div class="quiz-question">
+                            <h5>6. Quel framework CSS est utilisé pour ce site ?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q6" value="a"> Tailwind
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q6" value="b"> Bootstrap
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q6" value="c"> Foundation
+                            </label>
+                        </div>
+
+                        <!-- Question 7 -->
+                        <div class="quiz-question">
+                            <h5>7. Quelle balise HTML5 définit une section de navigation ?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q7" value="a"> &lt;navigation&gt;
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q7" value="b"> &lt;nav&gt;
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q7" value="c"> &lt;menu&gt;
+                            </label>
+                        </div>
+
+                        <!-- Question 8 -->
+                        <div class="quiz-question">
+                            <h5>8. Comment sélectionner un élément par son ID en CSS ?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q8" value="a"> .monID
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q8" value="b"> #monID
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q8" value="c"> *monID
+                            </label>
+                        </div>
+
+                        <!-- Question 9 -->
+                        <div class="quiz-question">
+                            <h5>9. Quel événement JavaScript est déclenché lors d'un clic ?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q9" value="a"> onpress
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q9" value="b"> onclick
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q9" value="c"> ontouch
+                            </label>
+                        </div>
+
+                        <!-- Question 10 -->
+                        <div class="quiz-question">
+                            <h5>10. Que signifie 'responsive design' ?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q10" value="a"> Design rapide
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q10" value="b"> Design adaptatif à tous les écrans
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q10" value="c"> Design qui répond aux utilisateurs
+                            </label>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-check"></i> Valider mes réponses
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="quizResults" class="hidden mt-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Boudabous Mohamed</h5>
+                    <p>Étudiant en Génie Informatique passionné par le développement web et les nouvelles technologies.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-icons">
+                        <a href="https://github.com/Med14022" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mohamedboudabous/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/boudabous.mohamed.3" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light my-4">
+            <p class="text-center mb-0">&copy; 2025 Boudabous Mohamed. Tous droits réservés. | Développé avec </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/js.js"></script>
+</body>
+</html>
