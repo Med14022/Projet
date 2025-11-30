@@ -9,7 +9,6 @@ body {
 	overflow-x: hidden;
 }
 
-/* Navbar Styles */
 .navbar {
 	background: #22293b !important;
 	backdrop-filter: blur(10px);
@@ -51,7 +50,6 @@ body {
 	width: 80%;
 }
 
-/* Hero Section with Network Animation */
 .hero-section {
 	min-height: 100vh;
 	background: linear-gradient(135deg, #c2d1ff 0%, #2d3548 100%);
@@ -62,7 +60,6 @@ body {
 	margin-top: -60px;
 }
 
-/* Canvas for network animation */
 #networkCanvas {
 	position: fixed;
 	top: 0;
@@ -168,7 +165,6 @@ body {
 	box-shadow: 0 5px 15px #74d8f1;
 }
 
-/* Hero Image */
 .hero-image {
 	position: relative;
 	z-index: 2;
@@ -193,7 +189,6 @@ body {
 	z-index: 2;
 }
 
-/* Sections */
 section {
 	background: linear-gradient(135deg, #c2d1ff 0%, #2d3548 100%);
 	padding: 80px 0;
@@ -207,7 +202,6 @@ section {
 	color: #2d3548;
 }
 
-/* Footer */
 footer {
 	background: #22293b;
 	color: white;
@@ -382,7 +376,6 @@ section {
 }
 
 
-/* Animations */
 @keyframes fadeInDown {
 	from {
 		opacity: 0;
