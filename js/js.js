@@ -1,4 +1,3 @@
-// Network Animation
 const canvas = document.getElementById('networkCanvas');
 const ctx = canvas.getContext('2d');
 
@@ -74,7 +73,6 @@ function animate() {
 
 animate();
 
-// Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -90,22 +88,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Quiz functionality
 const quizForm = document.getElementById('quizForm');
 const quizResults = document.getElementById('quizResults');
 
-// Correct answers
 const correctAnswers = {
-    q1: 'a',  // HTML
-    q2: 'b',  // <a>
-    q3: 'b',  // CSS
-    q4: 'c',  // color
-    q5: 'b',  // let
-    q6: 'b',  // Bootstrap
-    q7: 'b',  // <nav>
-    q8: 'b',  // #monID
-    q9: 'b',  // onclick
-    q10: 'b'  // responsive design
+    q1: 'a',
+    q2: 'b',
+    q3: 'b',
+    q4: 'c',
+    q5: 'b',
+    q6: 'b',
+    q7: 'b',
+    q8: 'b',
+    q9: 'b',
+    q10: 'b'
 };
 
 const correctExplanations = {
@@ -128,7 +124,6 @@ quizForm.addEventListener('submit', function(e) {
     let totalQuestions = 10;
     let resultsHTML = '<div class="quiz-result">';
     
-    // Calculate score
     for (let i = 1; i <= totalQuestions; i++) {
         const answer = document.querySelector(`input[name="q${i}"]:checked`);
         if (answer && answer.value === correctAnswers[`q${i}`]) {
@@ -136,7 +131,6 @@ quizForm.addEventListener('submit', function(e) {
         }
     }
     
-    // Display score
     const percentage = (score / totalQuestions) * 100;
     let message = '';
     let badgeClass = '';
@@ -167,7 +161,6 @@ quizForm.addEventListener('submit', function(e) {
         </div>
     </div>`;
     
-    // Show correct answers
     resultsHTML += '<div class="mt-4 bg-white p-4 rounded">';
     resultsHTML += '<h4 class="text-dark mb-3"><i class="fas fa-check-circle text-success"></i> Réponses correctes :</h4>';
     resultsHTML += '<ol class="text-start text-dark">';
@@ -185,12 +178,10 @@ quizForm.addEventListener('submit', function(e) {
     quizResults.innerHTML = resultsHTML;
     quizResults.classList.remove('hidden');
     
-    // Scroll to results
     quizResults.scrollIntoView({ behavior: 'smooth' });
 });
 
 
-// Active nav link on scroll
 window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -211,8 +202,6 @@ window.addEventListener('scroll', function() {
         }
     });
 });
-
-// Add animation on scroll
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
@@ -227,7 +216,6 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// Observe cards and timeline items
 document.querySelectorAll('.card, .timeline-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
